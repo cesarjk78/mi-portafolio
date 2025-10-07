@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2e0f1e9d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+<h2 class="logo">César Dev</h2>
+    
+    <nav class="navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#perfil">Perfil</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#informacion">Información</a>
+    </nav>
+  </header>
+
+  <!-- ESCENA PARALLAX -->
+  <section class="scene" id="home">
+    <img src="elfondaso.png" id="fondo" alt="Fondo" />
+    <img src="nubes.png" id="nubes" alt="Nubes" />
+    <img src="palmera1.png" id="palmera1" alt="Palmera derecha" />
+    <img src="palmera_2.png" id="palmera2" alt="Palmera izquierda" />
+    <h2 id="text">Portafolio Web</h2>
+  </section>
+
+  <!-- SECCIÓN DE CARTAS con FONDO DE PARTÍCULAS -->
+  <section class="sec">
+    <canvas id="particles"></canvas>
+    <h2>Sobre mí</h2>
+
+    <div class="big-card" id="perfil">
+      <i class="fa-solid fa-user"></i>
+      <div class="info">
+        <h3>César Rafael Gonzáles Tucto</h3>
+        <p>
+          Lima – Ate<br>
+          <a href="mailto:cesar.gonzales.t@tecsup.edu.pe">cesar.gonzales.t@tecsup.edu.pe</a><br>
+          <a href="https://www.linkedin.com/in/cesar-rafael-gonzales-tucto-a2069028a/">LinkedIn</a> | 
+          <a href="https://github.com/cesarjk78">GitHub</a><br>
+          956 507 342
+        </p>
+      </div>
+      <img src="foto.jpeg" alt="Foto de César Gonzales" class="profile-pic">
+    </div>
+
+    <div class="big-card">
+      <i class="fa-solid fa-code"></i>
+      <div class="info">
+        <h3>Perfil Profesional</h3>
+        <p>
+          Estudiante de Diseño y Desarrollo de Software con conocimientos en programación web y móvil, manejo de bases de datos y experiencia en proyectos académicos con Django, Laravel y Java. 
+          Destaco por mi capacidad de análisis lógico, aprendizaje rápido y trabajo colaborativo en entornos ágiles.
+        </p>
+      </div>
+    </div>
+
+    <div class="big-card" id="habilidades">
+      <i class="fa-solid fa-gears"></i>
+      <div class="info">
+        <h3>Habilidades Técnicas</h3>
+        <div class="skill-bar">
+          <button class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">Python</button>
+          <button class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="">PHP</button>
+          <button class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="">Java</button>
+          <button class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">JavaScript</button>
+          <button class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">SQL</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="big-card" id="informacion">
+      <i class="fa-solid fa-certificate"></i>
+      <div class="info">
+        <h3>Información Adicional</h3>
+        <p>
+          Nivel intermedio de inglés técnico.<br>
+          Certificados en UX (Coursera) y Responsive Web Design (FreeCodeCamp).<br>
+          Participación en hackathons y proyectos colaborativos en TECSUP.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
